@@ -4,4 +4,10 @@ class ApplicationController < ActionController::Base
 
   # Changes to the importmap will invalidate the etag for HTML responses
   stale_when_importmap_changes
+
+  include ErrorHandling
+
+  def current_user
+    nil # Placeholder for authentication system
+  end
 end

@@ -2,6 +2,6 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   connect() {
-    this.element.textContent = "Hello World!"
+    document.getElementById("this-element-does-not-exist").innerText = "This will cause a frontend error."
   }
 }
