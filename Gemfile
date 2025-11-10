@@ -64,3 +64,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Telegram Bot API wrapper
+gem "telegram-bot-ruby", "~> 2.4"
