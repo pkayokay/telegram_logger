@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root "pages#index"
+  get "pages/backend_error", as: "backend_error"
+  get "pages/frontend_error", as: "frontend_error"
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :errors, only: [:create]
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
